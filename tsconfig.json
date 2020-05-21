@@ -1,0 +1,42 @@
+{
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "compilerOptions": {
+    "target": "es6",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "jsx": "react",
+    "outDir": "./public/",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "baseUrl": "./source",
+    "paths": {
+      "API": ["./API/index.ts"],
+      "Action/*": ["./Store/Action/*"],
+      "Component/*": ["./Component/*"],
+      "Constant": ["./Constant/index.ts"],
+      "Mock/*": ["./Mock/*"],
+      "Reducer/*": ["./Store/Reducer/*"],
+      "Store": ["./Store/index.ts"],
+      "Style": ["./Style/Style.less"],
+      "Types/*": ["./Types/*"],
+      "Utilities/*": ["./Utilities/*"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "public",
+    "source/**/__test__/*",
+    "scripts"
+  ],
+  "awesomeTypescriptLoaderOptions": {
+    "useBabel": true,
+    "useCache": true,
+    "babelCore": "@babel/core"
+  }
+}
